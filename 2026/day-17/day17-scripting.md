@@ -260,26 +260,30 @@ All arguments: Linux Docker Kubernetes
 ```bash
 #!/bin/bash
 
-if [ "$EUID" -ne 0 ]; then
-    echo "Run as root"
+if [[ "$EUID" -ne 0 ]]
+then
+    echo "Run the script as the root user"
     exit 1
 fi
 
-packages=("nginx" "curl" "wget")
+pack=("nginx" "tree" "docker.io" "nmap")
 
-for package in "${packages[@]}"
+echo "Updating the package repository..."
+apt update
+
+for app in "${pack[@]}"
 do
-    if dpkg -s "$package" &> /dev/null; then
-        echo "$package is already installed"
+    if dpkg -s "$app" &> /dev/null
+    then
+        echo "$app is already installed"
     else
-        echo "$package is not installed. Installing..."
-        apt update
-        apt install -y "$package"
+        echo "$app is not installed, installing it..."
 
-        if [ $? -eq 0 ]; then
-            echo "$package installed successfully"
+        if apt install -y "$app"
+        then
+            echo "$app is successfully installed"
         else
-            echo "Failed to install $package"
+            echo "$app installation failed"
         fi
     fi
 done
