@@ -182,13 +182,7 @@ NAME                         STATUS   ROLES           AGE   VERSION
 devops-cluster-control-plane Ready    control-plane   ...   v1.x.x
 ```
 
-> **Screenshot:** Add the screenshot of `kubectl get nodes` here.
 
-Example Markdown:
-
-```markdown
-![kubectl get nodes](./screenshots/kubectl-get-nodes.png)
-```
 
 ---
 
@@ -230,13 +224,6 @@ kubectl get pods -A
 kubectl get pods -n kube-system
 ```
 
-> **Screenshot:** Add the screenshot of `kubectl get pods -n kube-system` here.
-
-Example Markdown:
-
-```markdown
-![kube-system pods](./screenshots/kubectl-get-kube-system-pods.png)
-```
 
 ### What each kube-system Pod does
 
@@ -395,28 +382,6 @@ kind create cluster --name devops-cluster
 
 ---
 
-## Submission
-
-Directory:
-
-```text
-2026/
-└── day-50/
-    ├── day-50-k8s-setup.md
-    └── screenshots/
-        ├── kubectl-get-nodes.png
-        └── kubectl-get-kube-system-pods.png
-```
-
-Commit and push:
-
-```bash
-git add 2026/day-50/
-git commit -m "Add Day 50 Kubernetes architecture and cluster setup"
-git push origin master
-```
-
----
 
 ## Learn in Public
 
