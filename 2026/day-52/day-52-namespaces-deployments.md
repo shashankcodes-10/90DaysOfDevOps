@@ -552,40 +552,7 @@ kubectl rollout undo deployment/nginx-deployment -n dev
 - Rollbacks allow a Deployment to return to a previous revision.
 - Namespace deletion removes resources contained within that namespace.
 
----
 
-# Files Created
-
-```text
-2026/
-└── day-52/
-    ├── day-52-namespaces-deployments.md
-    ├── namespace.yaml
-    ├── nginx-deployment.yaml
-    └── (YAML and Markdown files only)
-```
-
----
-
-# Submission
-
-Add the Day 52 files:
-
-```bash
-git add 2026/day-52/
-```
-
-Commit:
-
-```bash
-git commit -m "Add Day 52 Kubernetes namespaces and deployments"
-```
-
-Push:
-
-```bash
-git push origin master
-```
 
 ---
 
