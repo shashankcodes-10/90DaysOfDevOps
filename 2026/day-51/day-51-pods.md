@@ -92,11 +92,7 @@ If `/bin/bash` is unavailable, `/bin/sh` can be used instead.
 
 The Nginx container serves its default welcome page on port 80.
 
-> **Screenshot:** Add your `kubectl get pods` screenshot here.
 
-```markdown
-![Running Pods](./screenshots/kubectl-get-pods.png)
-```
 
 ---
 
@@ -437,33 +433,11 @@ This is one reason applications are normally deployed using higher-level control
     ├── busybox-pod.yaml
     ├── alpine-pod.yaml
     ├── test-pod.yaml
-    └── screenshots/
-        └── kubectl-get-pods.png
 ```
 
 ---
 
-# Submission
 
-Add the files:
-
-```bash
-git add 2026/day-51/
-```
-
-Commit:
-
-```bash
-git commit -m "Add Day 51 Kubernetes Pod manifests"
-```
-
-Push:
-
-```bash
-git push origin master
-```
-
----
 
 # Learn in Public
 
