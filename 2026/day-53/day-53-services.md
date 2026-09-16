@@ -534,41 +534,6 @@ kubectl delete -f loadbalancer-service.yaml
 
 ---
 
-# Files Created
-
-```text
-2026/
-└── day-53/
-    ├── day-53-services.md
-    ├── app-deployment.yaml
-    ├── clusterip-service.yaml
-    ├── nodeport-service.yaml
-    └── loadbalancer-service.yaml
-```
-
----
-
-# Submission
-
-Add the files:
-
-```bash
-git add 2026/day-53/
-```
-
-Commit:
-
-```bash
-git commit -m "Add Day 53 Kubernetes services"
-```
-
-Push:
-
-```bash
-git push origin master
-```
-
----
 
 # Learn in Public
 
